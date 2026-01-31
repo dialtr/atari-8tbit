@@ -40,7 +40,7 @@ used in these examples are:
 	atari800 -ntsc -cart cartridge.bin -cart-type 1
 
 
-| <div style="width:200px">Flag</div> | Description | 
+| Flag Value | Description | 
 |------------|------------|
 | -ntsc | This specifies running the emulator in NTSC (North American TV mode) and is necessary for display list interrupts to run, apparently (this may be a bug.) |
 | -cart | Specifies the cartridge binary to run. |
