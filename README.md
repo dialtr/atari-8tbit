@@ -26,5 +26,29 @@ This repo assumes Debian Linux. The following packages are required:
 * dasm (The assembler used in the tutorials.)
 * atari800 (Atari 400/800 emulator.)
 
+## Running Examples
+
+The Makefiles in each directory have a **run** target, so to run, just type:
+
+```bash
+    make run
+```
+
+The **run** target runs the atari800 emulator with some options. The options
+used in these examples are:
+
+	atari800 -ntsc -cart cartridge.bin -cart-type 1
+
+* -ntsc  This specifies running the emulator in NTSC (North American TV mode) and
+         is necessary for display list interrupts to run, apparently (this may
+         be a bug.)
+
+* -cart  Specifies the cartridge binary to run.
+
+* -cart-type (usually either 1 or 2.  1 for 8KiB carts, 2 for 16KiB carts)
+
+
+ 
+
 ## Author
 dialtr@gmail.com
